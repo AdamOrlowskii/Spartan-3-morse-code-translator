@@ -1,0 +1,3 @@
+vhdl work "modul_klaw.vhd"
+vhdl work "kod_na_dzwiek.vhd"
+vhdl work "main.vhf"

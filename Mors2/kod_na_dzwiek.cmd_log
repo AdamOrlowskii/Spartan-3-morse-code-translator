@@ -1,0 +1,8 @@
+vhdtdtfi -lib work kod_na_dzwiek.vhd -prj Mors2 -o kod_na_dzwiek.spl -module kod_na_dzwiek -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kod_na_dzwiek.spl C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.sym 
+vhdtdtfi -lib work kod_na_dzwiek.vhd -prj Mors2 -o kod_na_dzwiek.spl -module kod_na_dzwiek -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kod_na_dzwiek.spl C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.sym 
+vhdtdtfi -lib work kod_na_dzwiek.vhd -prj Mors2 -o kod_na_dzwiek.spl -module kod_na_dzwiek -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kod_na_dzwiek.spl C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.sym 
+vhdtdtfi -lib work kod_na_dzwiek.vhd -prj Mors2 -o kod_na_dzwiek.spl -module kod_na_dzwiek -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kod_na_dzwiek.spl C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.sym 

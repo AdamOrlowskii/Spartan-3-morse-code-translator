@@ -34,7 +34,7 @@ entity modul_klaw is
            E0 : in  STD_LOGIC;
            F0 : in  STD_LOGIC;
            DO_Rdy : in  STD_LOGIC;
-           LETTER : out  STD_LOGIC_VECTOR (4 downto 0));
+           LETTER : out  STD_LOGIC_VECTOR (7 downto 0));
 end modul_klaw;
 
 architecture Behavioral of modul_klaw is
@@ -46,60 +46,60 @@ begin
 	if DO_Rdy = '1' then
 		if F0 = '0' then
 			if DO = X"15" then
-				LETTER <= "00001"; 
+				LETTER <= X"51"; 
 			elsif DO = X"1D" then
-				LETTER <= "00010";
+				LETTER <= X"57";
 			elsif DO = X"24" then
-				LETTER <= "00011";
+				LETTER <= X"45";
 			elsif DO = X"2D" then
-				LETTER <= "00100";
+				LETTER <= X"52";
 			elsif DO = X"2C" then
-				LETTER <= "00101";
+				LETTER <= X"54";
 			elsif DO = X"35" then
-				LETTER <= "00110";
+				LETTER <= X"59";
 			elsif DO = X"3C" then
-				LETTER <= "00111";
+				LETTER <= X"55";
 			elsif DO = X"43" then
-				LETTER <= "01000";
+				LETTER <= X"49";
 			elsif DO = X"44" then
-				LETTER <= "01001";
+				LETTER <= X"4F";
 			elsif DO = X"4D" then
-				LETTER <= "01010";
+				LETTER <= X"50";
 			elsif DO = X"1C" then
-				LETTER <= "01011";
+				LETTER <= X"41";
 			elsif DO = X"1B" then
-				LETTER <= "01100";
+				LETTER <= X"53";
 			elsif DO = X"23" then
-				LETTER <= "01101";
+				LETTER <= X"44";
 			elsif DO = X"2B" then
-				LETTER <= "01110";
+				LETTER <= X"46";
 			elsif DO = X"34" then
-				LETTER <= "01111";
+				LETTER <= X"47";
 			elsif DO = X"33" then
-				LETTER <= "10000";
+				LETTER <= X"48";
 			elsif DO = X"3B" then
-				LETTER <= "10001";
+				LETTER <= X"4A";
 			elsif DO = X"42" then
-				LETTER <= "10010";
+				LETTER <= X"4B";
 			elsif DO = X"4B" then
-				LETTER <= "10011";
-			elsif DO = X"1Z" then
-				LETTER <= "10100";
+				LETTER <= X"4C";
+			elsif DO = X"1A" then
+				LETTER <= X"5A";
 			elsif DO = X"22" then
-				LETTER <= "10101";
+				LETTER <= X"58";
 			elsif DO = X"21" then
-				LETTER <= "10110";
+				LETTER <= X"43";
 			elsif DO = X"2A" then
-				LETTER <= "10111";
+				LETTER <= X"56";
 			elsif DO = X"32" then
-				LETTER <= "11000";
+				LETTER <= X"42";
 			elsif DO = X"31" then
-				LETTER <= "11001";
+				LETTER <= X"4E";
 			elsif DO = X"3A" then
-				LETTER <= "11010";
+				LETTER <= X"4D";
 			end if;
 		elsif F0 = '1' then
-				LETTER <= "0000";		
+				LETTER <= X"00";		
 		end if;
 	end if;
 end process;

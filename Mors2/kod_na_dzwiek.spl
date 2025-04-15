@@ -1,0 +1,9 @@
+[Inputs]
+clk
+=LETTER[7:0]=
+[Outputs]
+start
+=data[11:0]=
+=adr[3:0]=
+=cmd[3:0]=
+[BiDir]

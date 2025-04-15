@@ -1,1 +1,63 @@
 sch2sym -intstyle ise -family spartan3e -refsym main C:/Users/lab/Mors2/main.sch C:/Users/lab/Mors2/main.sym 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -uc C:/Users/lab/Downloads/ADC_DAC.ucf -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -uc C:/Users/lab/Downloads/ADC_DAC.ucf -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -uc C:/Users/lab/Downloads/ADC_DAC.ucf -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -uc C:/Users/lab/Downloads/ADC_DAC.ucf -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -uc C:/Users/lab/Downloads/ADC_DAC.ucf -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Mors2/main.xst" -ofn "C:/Users/lab/Desktop/Mors2/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../../Downloads/DACWrite (5)" -sd "../../Downloads/PS2_Kbd (2)" -sd "../../Downloads/VGAtxt48x20 (3)" -nt timestamp -uc "C:/Users/lab/Downloads/GenIO (10)/GenIO.ucf" -uc C:/Users/lab/Downloads/ADC_DAC.ucf -p xc3s500e-fg320-4 main.ngc main.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+bitgen -intstyle ise -f main.ut main.ncd 

@@ -1,0 +1,519 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../Downloads/DACWrite (5)" "../../Downloads/PS2_Kbd (2)" "../../Downloads/VGAtxt48x20 (3)"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/lab/Desktop/Mors2/modul_klaw.vhd" in Library work.
+Architecture behavioral of Entity modul_klaw is up to date.
+Compiling vhdl file "C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.vhd" in Library work.
+Entity <kod_na_dzwiek> compiled.
+Entity <kod_na_dzwiek> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/Desktop/Mors2/main.vhf" in Library work.
+Architecture behavioral of Entity main is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <modul_klaw> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kod_na_dzwiek> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/Mors2/main.vhf" line 141: Instantiating black box module <PS2_Kbd>.
+WARNING:Xst:753 - "C:/Users/lab/Desktop/Mors2/main.vhf" line 151: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/Mors2/main.vhf" line 151: Instantiating black box module <VGAtxt48x20>.
+WARNING:Xst:753 - "C:/Users/lab/Desktop/Mors2/main.vhf" line 194: Unconnected output port 'SF_CE0' of component 'DACWrite'.
+WARNING:Xst:753 - "C:/Users/lab/Desktop/Mors2/main.vhf" line 194: Unconnected output port 'Busy' of component 'DACWrite'.
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/Mors2/main.vhf" line 194: Instantiating black box module <DACWrite>.
+Entity <main> analyzed. Unit <main> generated.
+
+Analyzing Entity <modul_klaw> in library <work> (Architecture <behavioral>).
+Entity <modul_klaw> analyzed. Unit <modul_klaw> generated.
+
+Analyzing Entity <kod_na_dzwiek> in library <work> (Architecture <behavioral>).
+Entity <kod_na_dzwiek> analyzed. Unit <kod_na_dzwiek> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <modul_klaw>.
+    Related source file is "C:/Users/lab/Desktop/Mors2/modul_klaw.vhd".
+WARNING:Xst:647 - Input <E0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 8-bit latch for signal <LETTER>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <modul_klaw> synthesized.
+
+
+Synthesizing Unit <kod_na_dzwiek>.
+    Related source file is "C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.vhd".
+    Found 1-bit register for signal <start>.
+    Found 16-bit up counter for signal <innercounter>.
+    Found 4-bit register for signal <nextcounter>.
+    Found 4-bit adder for signal <nextcounter$add0000> created at line 80.
+    Found 16-bit comparator equal for signal <nextcounter$cmp_eq0000> created at line 79.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <kod_na_dzwiek> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "C:/Users/lab/Desktop/Mors2/main.vhf".
+WARNING:Xst:653 - Signal <XLXI_4_ScrollClear_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_4_NewLine_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_4_Home_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_4_Goto00_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_4_CursorOn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../Downloads/PS2_Kbd (2)/PS2_Kbd.ngc>.
+Reading core <../../Downloads/VGAtxt48x20 (3)/VGAtxt48x20.ngc>.
+Reading core <../../Downloads/DACWrite (5)/DACWrite.ngc>.
+Loading core <PS2_Kbd> for timing and area information for instance <XLXI_3>.
+Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_4>.
+Loading core <DACWrite> for timing and area information for instance <XLXI_23>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <LETTER_5> (without init value) has a constant value of 0 in block <modul_klaw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LETTER_7> (without init value) has a constant value of 0 in block <modul_klaw>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <main> ...
+
+Optimizing unit <kod_na_dzwiek> ...
+
+Optimizing unit <modul_klaw> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 592
+#      AND2                        : 1
+#      AND3                        : 4
+#      AND3B1                      : 4
+#      BUF                         : 3
+#      GND                         : 4
+#      INV                         : 20
+#      LUT1                        : 65
+#      LUT2                        : 55
+#      LUT2_L                      : 4
+#      LUT3                        : 70
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 136
+#      LUT4_D                      : 8
+#      LUT4_L                      : 9
+#      MUXCY                       : 81
+#      MUXF5                       : 32
+#      MUXF5_L                     : 2
+#      MUXF6                       : 6
+#      OR2                         : 5
+#      VCC                         : 4
+#      XOR2                        : 1
+#      XORCY                       : 75
+# FlipFlops/Latches                : 217
+#      FD                          : 53
+#      FDE                         : 74
+#      FDR                         : 37
+#      FDRE                        : 44
+#      FDRSE                       : 2
+#      FDSE                        : 1
+#      LD                          : 6
+# RAMS                             : 2
+#      RAMB16_S9                   : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 3
+#      SRL16                       : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 4
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      223  out of   4656     4%  
+ Number of Slice Flip Flops:            217  out of   9312     2%  
+ Number of 4 input LUTs:                373  out of   9312     4%  
+    Number used as logic:               370
+    Number used as Shift registers:       3
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    232     7%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------+--------------------------+-------+
+Clock Signal                                      | Clock buffer(FF name)    | Load  |
+--------------------------------------------------+--------------------------+-------+
+Clk_50MHz                                         | BUFGP                    | 216   |
+XLXI_3/DO_Rdy(XLXI_3/ResDORdy/Mxor_DOut_Result1:O)| NONE(*)(XLXI_12/LETTER_6)| 6     |
+--------------------------------------------------+--------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.574ns (Maximum Frequency: 104.450MHz)
+   Minimum input arrival time before clock: 4.076ns
+   Maximum output required time after clock: 5.620ns
+   Maximum combinational path delay: 7.174ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_50MHz'
+  Clock period: 9.574ns (frequency: 104.450MHz)
+  Total number of paths / destination ports: 3829 / 441
+-------------------------------------------------------------------------
+Delay:               9.574ns (Levels of Logic = 9)
+  Source:            XLXI_4/XLXI_147/Mrom_DO_rom0000 (RAM)
+  Destination:       XLXI_4/XLXI_115/XLXI_155/PixOut (FF)
+  Source Clock:      Clk_50MHz rising
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: XLXI_4/XLXI_147/Mrom_DO_rom0000 to XLXI_4/XLXI_115/XLXI_155/PixOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S9:CLK->DO6    1   2.800   0.420  XLXI_147/Mrom_DO_rom0000 (XLXN_899<6>)
+     begin scope: 'XLXI_115/XLXI_1'
+     begin scope: 'I_M01'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5_L:I0->LO        1   0.321   0.000  I_M03 (M03)
+     MUXF6:I0->O           1   0.521   0.420  I_O (O)
+     end scope: 'XLXI_115/XLXI_1'
+     XOR2:I0->O            1   0.704   0.420  XLXI_115/XLXI_141 (XLXI_115/XLXN_727)
+     AND2:I1->O            1   0.704   0.424  XLXI_115/XLXI_154 (XLXI_115/XLXN_762)
+     LUT4:I3->O            1   0.704   0.000  XLXI_115/XLXI_155/iPixOut103 (XLXI_115/XLXI_155/iPixOut)
+     FD:D                      0.308          XLXI_115/XLXI_155/PixOut
+    ----------------------------------------
+    Total                      9.574ns (7.470ns logic, 2.104ns route)
+                                       (78.0% logic, 22.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/DO_Rdy'
+  Clock period: 2.771ns (frequency: 360.881MHz)
+  Total number of paths / destination ports: 11 / 6
+-------------------------------------------------------------------------
+Delay:               2.771ns (Levels of Logic = 2)
+  Source:            XLXI_12/LETTER_4 (LATCH)
+  Destination:       XLXI_12/LETTER_4 (LATCH)
+  Source Clock:      XLXI_3/DO_Rdy falling
+  Destination Clock: XLXI_3/DO_Rdy falling
+
+  Data Path: XLXI_12/LETTER_4 to XLXI_12/LETTER_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.676   0.762  XLXI_12/LETTER_4 (XLXI_12/LETTER_4)
+     LUT2:I0->O            1   0.704   0.000  XLXI_12/LETTER_mux0027<3>1061 (XLXI_12/LETTER_mux0027<3>106)
+     MUXF5:I1->O           1   0.321   0.000  XLXI_12/LETTER_mux0027<3>106_f5 (XLXI_12/LETTER_mux0027<3>)
+     LD:D                      0.308          XLXI_12/LETTER_4
+    ----------------------------------------
+    Total                      2.771ns (2.009ns logic, 0.762ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.076ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       XLXI_23/Cnt_0 (FF)
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: rst to XLXI_23/Cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.610  rst_IBUF (rst_IBUF)
+     begin scope: 'XLXI_23'
+     LUT2:I1->O            5   0.704   0.633  Cnt_or00001 (Cnt_or0000)
+     FDR:R                     0.911          Cnt_0
+    ----------------------------------------
+    Total                      4.076ns (2.833ns logic, 1.243ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              5.620ns (Levels of Logic = 3)
+  Source:            XLXI_23/iBusy (FF)
+  Destination:       DAC_CS (PAD)
+  Source Clock:      Clk_50MHz rising
+
+  Data Path: XLXI_23/iBusy to DAC_CS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRSE:C->Q            5   0.591   0.633  iBusy (iBusy)
+     INV:I->O              1   0.704   0.420  DAC_CS1_INV_0 (DAC_CS)
+     end scope: 'XLXI_23'
+     OBUF:I->O                 3.272          DAC_CS_OBUF (DAC_CS)
+    ----------------------------------------
+    Total                      5.620ns (4.567ns logic, 1.053ns route)
+                                       (81.3% logic, 18.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.174ns (Levels of Logic = 4)
+  Source:            Clk_50MHz (PAD)
+  Destination:       SPI_SCK (PAD)
+
+  Data Path: Clk_50MHz to SPI_SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     BUFGP:I->O          218   1.457   1.321  Clk_50MHz_BUFGP (Clk_50MHz_BUFGP)
+     begin scope: 'XLXI_23'
+     INV:I->O              1   0.704   0.420  SPI_SCK1_INV_0 (SPI_SCK)
+     end scope: 'XLXI_23'
+     OBUF:I->O                 3.272          SPI_SCK_OBUF (SPI_SCK)
+    ----------------------------------------
+    Total                      7.174ns (5.433ns logic, 1.741ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.60 secs
+ 
+--> 
+
+Total memory usage is 4532288 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -44,7 +44,7 @@ ScrollEn <= '1';
 Code: process (LETTER)
 begin
 			if LETTER = X"15" then
-				Char_DI <= "00001"; 
+				Char_DI <= X"00001"; 
 			elsif DO = X"1D" then
 				LETTER <= "00010";
 			elsif DO = X"24" then
@@ -97,7 +97,7 @@ begin
 				LETTER <= "11010";
 			end if;
 		elsif F0 = '1' then
-				LETTER <= "0000";		
+				LETTER <= "00000";		
 		end if;
 	end if;
 end process;

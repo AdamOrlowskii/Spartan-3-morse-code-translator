@@ -1,0 +1,10 @@
+vhdtdtfi -lib work modul_klaw.vhd -prj Mors2 -o modul_klaw.spl -module modul_klaw -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e modul_klaw.spl C:/Users/lab/Desktop/Mors2/modul_klaw.sym 
+vhdtdtfi -lib work modul_klaw.vhd -prj Mors2 -o modul_klaw.spl -module modul_klaw -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e modul_klaw.spl C:/Users/lab/Desktop/Mors2/modul_klaw.sym 
+vhdtdtfi -lib work modul_klaw.vhd -prj Mors2 -o modul_klaw.spl -module modul_klaw -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e modul_klaw.spl C:/Users/lab/Desktop/Mors2/modul_klaw.sym 
+vhdtdtfi -lib work modul_klaw.vhd -prj Mors2 -o modul_klaw.spl -module modul_klaw -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e modul_klaw.spl C:/Users/lab/Desktop/Mors2/modul_klaw.sym 
+vhdtdtfi -lib work modul_klaw.vhd -prj Mors2 -o modul_klaw.spl -module modul_klaw -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e modul_klaw.spl C:/Users/lab/Desktop/Mors2/modul_klaw.sym 

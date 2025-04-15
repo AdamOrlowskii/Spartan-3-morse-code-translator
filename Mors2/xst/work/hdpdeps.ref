@@ -1,0 +1,18 @@
+V3 16
+FL C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.vhd 2025/04/10.14:07:36 P.20131013
+EN work/kod_na_dzwiek 1744286861 FL C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/kod_na_dzwiek/Behavioral 1744286862 \
+      FL C:/Users/lab/Desktop/Mors2/kod_na_dzwiek.vhd EN work/kod_na_dzwiek 1744286861
+FL C:/Users/lab/Desktop/Mors2/main.vhf 2025/04/10.13:51:48 P.20131013
+EN work/main 1744286863 FL C:/Users/lab/Desktop/Mors2/main.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/main/BEHAVIORAL 1744286864 \
+      FL C:/Users/lab/Desktop/Mors2/main.vhf EN work/main 1744286863 CP PS2_Kbd \
+      CP VGAtxt48x20 CP BUF CP modul_klaw CP kod_na_dzwiek CP DACWrite
+FL C:/Users/lab/Desktop/Mors2/modul_klaw.vhd 2025/04/10.13:02:31 P.20131013
+EN work/modul_klaw 1744286859 FL C:/Users/lab/Desktop/Mors2/modul_klaw.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/modul_klaw/Behavioral 1744286860 \
+      FL C:/Users/lab/Desktop/Mors2/modul_klaw.vhd EN work/modul_klaw 1744286859

@@ -1,0 +1,8 @@
+[Inputs]
+E0
+F0
+DO_Rdy
+=DO[7:0]=
+[Outputs]
+=LETTER[7:0]=
+[BiDir]
